@@ -44,8 +44,8 @@ for result in google_results:
         bullet_summaries.append(bullet_summary)
         total_token_count = total_token_count + ai.count_tokens(bullet_summary)
     
-        #generate contnet ideas
-        print("Generating Conent Ideas...")
+        #generate content ideas
+        print("Generating Content Ideas...")
         total_token_count = total_token_count + ai.count_tokens(bullet_summary)
         ideas = ai.generate_content_ideas(bullet_summary)
         print("Content Ideas")
